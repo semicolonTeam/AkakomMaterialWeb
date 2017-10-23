@@ -1,0 +1,14 @@
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.mdl-layout__drawer {
+  width: 35%;
+  left: -250px;
+}
+
+.mdl-layout__drawer.is-visible {
+  left: 0;
+}

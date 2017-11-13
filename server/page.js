@@ -1,6 +1,6 @@
 const path = require('path')
 
-let page = {
+var page = {
 	
 	dir: path.join(__dirname,'../template/pages/'),
 

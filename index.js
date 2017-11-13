@@ -1,5 +1,5 @@
 const express = require('express')
-const http = require('http')
+const request = require('request')
 
 const page = require('./server/page')
 
@@ -17,8 +17,16 @@ app.get('/berita',(req,res)=>{
 	res.sendFile(page.getPath('berita'))
 })
 
+app.get('/berita/:slug',(req,res)=>{
+	res.sendFile(page.getPath('berita.detail'))
+})
+
 app.get('/info',(req,res)=>{
-	res.sendFile(page.getPath('info'))
+	// res.sendFile(page.getPath('info'))
+	request.get('http://localhost:8008/api/berita',(err, resp, body)=>{
+		var json = JSON.parse(body)
+		res.send(json.message)
+	})
 })
 
 app.get('/sejarah',(req,res)=>{

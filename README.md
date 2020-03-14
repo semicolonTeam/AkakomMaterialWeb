@@ -10,5 +10,5 @@ Material Desain dari Website Akakom (http://akakom.ac.id)
 * Ketik ```npm start```
 
 ## Catatan
-* Pengerjaan hanya dalam folder **page**. Apabila ingin mengubah bagian lainnya, hubungi owner ([@robisemicolon](https://github.com/robisemicolon))
+* Pengerjaan hanya dalam folder **page**. Apabila ingin mengubah bagian lainnya, hubungi owner ([@hadihammurabi](https://github.com/robisemicolon))
 * Harus terhubung dengan internet, karena font untuk icon menggunakan *cloud CDN*
